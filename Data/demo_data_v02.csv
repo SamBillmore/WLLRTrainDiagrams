@@ -1,0 +1,11 @@
+Location,Time,Distance
+LLA d,10:00,8
+CYF a,10:15,5.7
+CYF d,10:15,5.7
+CAS a,10:24,3.75
+CAS d,10:28,3.75
+CAS a,11:36,3.75
+CAS d,11:40,3.75
+CYF a,11:53,5.7
+CYF d,11:53,5.7
+LLA a,12:07,8
