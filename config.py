@@ -1,8 +1,8 @@
-column_datatypes = {'Location':str,
+COLUMN_DATATYPES = {'Location':str,
                     'Train':str,
                     'Time':str,
                     'Distance':float}
 
-filepath = 'Data/demo_data_v05.csv'
+FILEPATH = 'Data/demo_data_v05.csv'
 
-scaling_factor = 6/127
+SCALING_FACTOR = 6/127
