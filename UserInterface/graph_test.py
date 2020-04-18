@@ -6,6 +6,7 @@ import matplotlib
 matplotlib.use("TkAgg")
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
+import matplotlib.dates as mdates
 
 from config import COLUMN_DATATYPES,FILEPATH,SCALING_FACTOR
 from DataManipulation.data_manipulation import TrainData
@@ -43,6 +44,9 @@ class GraphTest(Frame):
         ax = fig.add_subplot(111)
         for train in data.all_trains:
             ax.plot_date(train.timetable['Time'],train.timetable['Distance'],linestyle='solid',marker=',')
+        ax.set_ylim((-0.5, 8.5))
+        myFmt = mdates.DateFormatter('%H:%M')
+        ax.xaxis.set_major_formatter(myFmt)
 
         canvas = FigureCanvasTkAgg(fig, self)
         canvas.draw()

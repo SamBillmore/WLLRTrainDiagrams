@@ -17,10 +17,7 @@ class HomeScreen(Frame):
         self.parent = parent
         
         self.intro_label = Label (self, text='Welcome to the WLLR timetable diagram program.', bg=background_col, fg=foreground_col, font=font)
-
         self.back_button = Button (self, text='Graph', width=19, command=lambda: self.controller.show_frame('GraphTest'))
 
-        # self.picture.grid(row=0, column=0, padx = 5, pady = 5, columnspan=2)
         self.intro_label.grid(row=1, column=0, sticky='W', padx=25, pady=20, columnspan=2)
-
-        self.back_button.grid(row=4, column=0, sticky='W', padx=25, pady = 20)
+        self.back_button.grid(row=2, column=0, sticky='W', padx=25, pady = 20)
